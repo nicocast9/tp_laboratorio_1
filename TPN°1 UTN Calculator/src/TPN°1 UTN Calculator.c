@@ -30,24 +30,24 @@
 #define INGRESADO 1
 #define NO_INGRESADO 0
 
-int main(void)
-{
-	float operando1;
-	float operando2;
-	int opciones;
-	float suma;
-	float resta;
-	float division;
-	float multiplicacion;
-	//long long int factorX;
-	//long long int factorY;
-	float flagNumero1;
-	float flagNumero2;
-	char respuesta;
+	int main(void)
+	{
+		int opciones;
+		float operando1;
+		float operando2;
+		float suma;
+		float resta;
+		float division;
+		float multiplicacion;
+		//long long int factorX;
+		//long long int factorY;
+		float flagNumero1;
+		float flagNumero2;
+		char respuesta;
 
-	respuesta = 's';
+		respuesta = 's';
 
-	setbuf(stdout, NULL);
+		setbuf(stdout, NULL);
 
 	do
 	{
@@ -59,10 +59,12 @@ int main(void)
 				operando1 = num1();
 				flagNumero1 = INGRESADO;
 				break;
+
 			case 2:
 				operando2 = num2();
 				flagNumero2 = INGRESADO;
 				break;
+
 			case 3:
 				if(flagNumero1 == INGRESADO && flagNumero2 == INGRESADO)
 				{
@@ -80,6 +82,7 @@ int main(void)
 					printf("ERROR, verifique que haya ingresado los valores correctamente \n");
 				}
 				break;
+
 			case 4:
 				printf("El resultado de la suma de %.2f + %.2f es : %.2f", operando1, operando2, suma);
 				printf("\nEl resultado de la resta de %.2f - %.2f es: %.2f", operando1, operando2, resta);
@@ -87,6 +90,7 @@ int main(void)
 				printf("\nEl resultado de la división de %.2f / %.2f es: %.2f", operando1, operando2, division);
 				//printf("\nEl factorial de &d es: %d y el factorial de %d es: %d\n",(int)operando1,factorX,(int)operando2,factorY);
 				break;
+
 			case 5:
 				printf("\n¡Gracias por utilizar UTN Calculator!");
 				respuesta = 'n';
@@ -100,19 +104,19 @@ int main(void)
 
 }
 
-/*unsigned long int Factorial(int);
+/*unsigned long int Factorial;
 {
-	unsigned long int fac;
+	unsigned long int factor;
 
 	if(a==1||a==0)
 	{
-		fac=1;
+		factor=1;
 	}
 	else
 	{
-		fac= a*Factorial(a-1);
+		factor= a*Factorial(a-1);
 	}
 
-	return fac;
+	return factor;
 }
 */

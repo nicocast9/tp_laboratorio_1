@@ -8,6 +8,19 @@
 #ifndef FUNCIONES_H_
 #define FUNCIONES_H_
 
+	int menu(void);
+	/**
+	 * @fn int menu(void);
+	 *
+	 * @brief un Menú interactivo con opciones.
+	 *
+	 * @param float x Recibe un valor ingresado por el usuario.
+	 *
+	 * @param float y Recibe un valor ingresado por el usuario.
+	 *
+	 * @return int menu Devuelve una opción del 1 al 5 que luego es utilizada por el switch.
+	 * */
+
 	float num1(void);
 	/**
 	 * @fn float num1(void);
@@ -89,17 +102,5 @@
 	 * @return unsigned long int factorial Devuelve el resultado del Factorial del entero.
 	 */
 
-	int menu(void);
-	/**
-	 * @fn int menu(void);
-	 *
-	 * @brief un Menú interactivo con opciones.
-	 *
-	 * @param float x Recibe un valor ingresado por el usuario.
-	 *
-	 * @param float y Recibe un valor ingresado por el usuario.
-	 *
-	 * @return int menu Devuelve una opción del 1 al 5 que luego es utilizada por el switch.
-	 * */
 
 #endif /* FUNCIONES_H_ */
